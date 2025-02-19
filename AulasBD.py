@@ -23,9 +23,22 @@ cursor = conn.cursor()
 #cursor.execute('INSERT INTO usuario (id, nome, endereco, email, telefone) VALUES (3, "Jose", "Rua 3","jose@gmail.com",11123456789);')
 #cursor.execute('INSERT INTO usuario (id, nome, endereco, email, telefone) VALUES (4, "Marcia", "Rua 4","marcia@gmail.com",11123456789);')
 
+#Excluindo Dados
+#cursor.execute('DELETE FROM usuario WHERE id = 1;')
+
+#Atualizando Dados
+#cursor.execute('UPDATE usuario SET endereco = "Minas Gerais" WHERE id = 1;')
+
 #Excluindo tabela
 #cursor.execute('DROP TABLE produtos;')
 
+#Comando SELECT com clausulas
+#Seleciona tudo da tabela usuario e verificando os resultados no python
+#visualizar = cursor.execute('SELECT * FROM usuario ORDER BY nome DESC;')
+#visualizar = cursor.execute('SELECT * FROM usuario LIMIT 3;')
+visualizar = cursor.execute('SELECT DISTINCT * FROM usuario;')
+for usuario in visualizar:
+    print(usuario)
 
 #envio de comandos SQL
 conn.commit()
