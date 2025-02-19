@@ -26,7 +26,3 @@ O objetivo deste repositório é fornecer exemplos práticos e scripts úteis pa
 ## Contribuição
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e enviar pull requests.
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
